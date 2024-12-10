@@ -9,6 +9,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: static.diskounto.com
 
     steps:
       - name: Checkout code
