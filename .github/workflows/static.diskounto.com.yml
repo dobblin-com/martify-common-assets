@@ -23,8 +23,8 @@ jobs:
 
       - name: Sync files to S3
         run: |
-          aws s3 sync . s3://${{ var.AWS_S3_BUCKET }} --delete
+          aws s3 sync . s3://${{ vars.AWS_S3_BUCKET }} --delete
 
       - name: Invalidate CloudFront Cache
         run: |
-          aws cloudfront create-invalidation --distribution-id ${{ var.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+          aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
