@@ -10,12 +10,12 @@ export class MartifyCommonAssetsStackDev extends Stack {
 
     Tags.of(this).add("X:ENVIRONMENT", "DEV");
 
-    const s3Hosting = new S3HostingConstruct(this, "AppHosting", {
+    new S3HostingConstruct(this, "AppHosting", {
       domain: variables.appDomain,
       hostedZoneDomain: variables.hostedZoneDomain,
       certificateArn: variables.cloudfrontCertificateArn,
       removeOnDestroy: true,
-      wwwRedirect: true
+      wwwRedirect: false
     });
   }
 }
