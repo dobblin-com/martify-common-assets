@@ -1,0 +1,12 @@
+{
+  "hostedZoneDomain": "dobblin.com",
+  "appDomain": "static.dobblin.com",
+  "cloudfrontCertificateArn": "arn:aws:acm:us-east-1:891612578284:certificate/0fadc197-c378-4e18-8fa9-2af3d06f241e",
+  "githubConnectionArn": "arn:aws:codeconnections:ap-south-1:891612578284:connection/21b45a1c-e821-4eb8-a382-57470d58482e",
+  "githubOrg": "dobblin-com",
+  "githubRepo": "martify-common-assets",
+  "githubBranch": "main",
+  "codePipelineName": "static-dobblin-com",
+  "infraRuntime": { "nodejs": 20 },
+  "infraStacks": ["MartifyCommonAssetsStackProd"]
+}
