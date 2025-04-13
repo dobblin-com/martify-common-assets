@@ -15,6 +15,7 @@ export class MartifyCommonAssetsStackDev extends Stack {
       hostedZoneDomain: variables.hostedZoneDomain,
       certificateArn: variables.cloudfrontCertificateArn,
       removeOnDestroy: true,
+      allowCors: true,
       wwwRedirect: false
     });
   }

@@ -6,9 +6,7 @@
   "githubOrg": "dobblin-com",
   "githubRepo": "martify-common-assets",
   "githubBranch": "develop",
-  "envSecretName": "dev-dobblin-com-app-secrets",
   "codePipelineName": "static-dev-dobblin-com",
-  "appRuntime": { "nodejs": 12 },
   "infraRuntime": { "nodejs": 20 },
   "infraStacks": ["MartifyCommonAssetsStackDev"]
 }
