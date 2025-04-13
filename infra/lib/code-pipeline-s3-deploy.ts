@@ -76,7 +76,6 @@ export class CodePipelineS3DeployConstruct extends Construct {
     
 
     const sourceOutput = new codepipeline.Artifact();
-    const buildOutput = new codepipeline.Artifact();
     const pipeline = new codepipeline.Pipeline(this, "CodePipeline", {
       pipelineName,
       pipelineType: codepipeline.PipelineType.V2,
